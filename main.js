@@ -19,7 +19,5 @@ function hitungNilai(inputNilai) {
     }
   }
   
-  module.exports = {
-    hitungNilai: hitungNilai
-  };
+  module.exports = hitungNilai;
   

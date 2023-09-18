@@ -1,5 +1,5 @@
 const prompt = require('prompt-sync')();
-const {hitungNilai} = require('./main.js');
+const hitungNilai = require('./main.js');
 
 function getInput() {
   const inputNilai = prompt('Masukkan nilai Anda (0-100): ');
