@@ -1,7 +1,6 @@
 // main.js
 
 function hitungNilai(inputNilai) {
-    inputNilai = inputNilai;
   
     if (!isNaN(inputNilai) && inputNilai >= 0 && inputNilai <= 100) {
       if (inputNilai >= 90 && inputNilai <= 100) {
