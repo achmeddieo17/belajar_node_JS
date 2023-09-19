@@ -1,6 +1,6 @@
 function hitungNilai(inputNilai) {
   
-  if (!isNaN(inputNilai) && inputNilai > 0 && inputNilai <= 100) {
+  if (!isNaN (inputNilai) && inputNilai >= 0 && inputNilai <= 100 && inputNilai !== "") {
     if (inputNilai >= 90 && inputNilai <= 100) {
       return 'A';
     } else if (inputNilai >= 80 && inputNilai < 90) {
