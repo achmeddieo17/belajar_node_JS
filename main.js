@@ -1,23 +1,18 @@
-// main.js
+const prompt = require('prompt-sync')();
+const hitungNilai = require('./Hasil.js');
 
-function hitungNilai(inputNilai) {
-  
-    if (!isNaN(inputNilai) && inputNilai >= 0 && inputNilai <= 100) {
-      if (inputNilai >= 90 && inputNilai <= 100) {
-        return 'A';
-      } else if (inputNilai >= 80 && inputNilai < 90) {
-        return 'B';
-      } else if (inputNilai >= 70 && inputNilai < 80) {
-        return 'C';
-      } else if (inputNilai >= 60 && inputNilai < 70) {
-        return 'D';
-      } else {
-        return 'F';
-      }
-    } else {
-      return 'Invalid';
-    }
+function getInput() {
+  const inputNilai = prompt('Masukkan nilai Anda (0-100): ');
+  const nilai = hitungNilai(inputNilai);
+
+  if (nilai === 'Invalid') {
+    console.log('Masukkan nilai antara 0 - 100.');
+    getInput(); 
+  } else {
+    console.log(`Nilai Anda : ${nilai}!`);
   }
-  
-  module.exports = hitungNilai;
+}
+
+getInput(); 
+
   
